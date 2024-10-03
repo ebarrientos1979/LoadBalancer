@@ -1,6 +1,5 @@
 package pe.edu.newhorizons.loadbalancer.routes;
 
-import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.cors.CorsConfiguration;
