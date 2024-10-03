@@ -20,10 +20,10 @@ import static org.springframework.cloud.gateway.server.mvc.handler.HandlerFuncti
 public class Routes {
     @Bean
     public RouterFunction<ServerResponse> clienteServiceRoute(){
-        return route("SPRING-CLOUD-CLIENTE")
+        return route("APPMONGO")
                 .GET("/api/v1/auth/**", http())
                 .POST("/api/v1/auth/**", http())
-                .filter( lb("SPRING-CLOUD-CLIENTE") )
+                .filter( lb("APPMONGO") )
                 .build();
     }
 
