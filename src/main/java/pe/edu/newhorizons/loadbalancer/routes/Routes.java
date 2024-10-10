@@ -22,6 +22,7 @@ public class Routes {
     public RouterFunction<ServerResponse> clienteServiceRoute(){
         return route("APPMONGO")
                 .GET("/api/v1/auth/**", http())
+                .GET("/prestamo/**", http())
                 .POST("/api/v1/auth/**", http())
                 .filter( lb("APPMONGO") )
                 .build();
